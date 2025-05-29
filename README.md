@@ -45,74 +45,6 @@ The project is modular and includes:
 
 ---
 
-## 📂 Mobile App Directory Structure (Partial)
-Mobile App/
-└── Slider/
-    ├── .gradle/                  # Gradle build configuration and cache
-    │   └── 8.9/
-    ├── .idea/                    # Android Studio project configuration
-    │   ├── caches/
-    │   ├── codeStyles/
-    │   ├── inspectionProfiles/
-    │   └── modules/
-    │       └── app/
-    ├── .kotlin/                  # Kotlin-specific build data
-    │   └── sessions/
-    ├── app/                      # Main Android app module
-    │   ├── build/                # Build output and intermediates
-    │   │   ├── generated/
-    │   │   ├── intermediates/
-    │   │   ├── outputs/
-    │   │   └── tmp/
-    └── README.md                 # Project overview (expected location)
-
-## 📂 Web App Directory Structure (Partial)
-
-Slider/
-└───src/
-    └───main/
-        ├───java/
-        │   └───cst8218/
-        │       └───slider/
-        │           ├───client/                     # Optional client logic for frontend/backend interaction
-        │           ├───ejb/                        # Business logic layer
-        │           │   ├───exceptions/             # EJB exception handling
-        │           │   └───util/                   # Utility classes
-        │           ├───entity/                     # JPA entities for persistence
-        │           ├───game/                       # Core game logic
-        │           ├───presentation/               # JSF/Servlet presentation layer
-        │           │   └───util/                   # Presentation-layer utilities
-        │           ├───resources/                  # REST API resources (JAX-RS)
-        │           └───service/                    # Service layer abstraction
-        ├───resources/
-        │   └───META-INF/                           # Persistence config files (e.g., persistence.xml)
-        └───webapp/
-            ├───appUser/                            # JSF pages or static content for users
-            ├───resources/
-            │   └───css/                            # CSS stylesheets
-            ├───slider/                             # Slider-related frontend components/pages
-            └───WEB-INF/
-                └───web.xml                         # Web deployment descriptor
-
-## 📂 Desktop App Directory Structure (Partial)
-Slider/
-└───src/
-    └───test/
-        └───java/
-            ├───JunitTests/                         # Unit tests using JUnit
-            └───SeleniumTest/                       # Selenium tests for UI automation
-
-└───target/
-    ├───test-classes/
-    │   ├───JunitTests/
-    │   └───SeleniumTest/
-    └───classes/
-        └───org/
-            └───junit/                              # Compiled JUnit test classes
-
-
----
-
 ## 🚀 How to Run
 
 ### Backend (Java + REST + JSF)
@@ -120,14 +52,6 @@ Slider/
 2. Build and deploy the application  
 3. Configure users and roles in `web.xml` or security config  
 4. Access endpoints via browser or Postman  
-
-### Frontend (React)
-
-```bash
-cd Frontend
-npm install
-npm start
-```
 
 ###  Desktop Client
 
